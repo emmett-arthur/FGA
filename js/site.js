@@ -25,7 +25,10 @@
 
     var N       = 960;   // particle count
     var MAX_AGE = 480;   // frames before forced respawn
-    var MOVE    = 0.11;  // velocity scale (~2-3 px/frame at peak)
+    // MOVE scales linearly with viewport width: 0.055 on a 375px phone,
+    // 0.11 on a 1280px+ desktop. Keeps visual speed consistent across devices.
+    function calcMove() { return 0.055 + 0.055 * Math.min(1, Math.max(0, (W - 375) / 905)); }
+    var MOVE = calcMove();
 
     var particles = [];
     for (var i = 0; i < N; i++) {
@@ -175,6 +178,7 @@
       rt = setTimeout(function () {
         W = c.width = window.innerWidth;
         H = c.height = window.innerHeight;
+        MOVE = calcMove();
         ctx.fillStyle = NAVY;
         ctx.fillRect(0, 0, W, H);
         for (var i = 0; i < particles.length; i++) {
