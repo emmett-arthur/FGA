@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FGA — Journal</title>
+  <meta name="description" content="Field notes and condition reports from FGA — underwater inspection and marine construction, New York &amp; the East Coast.">
+  <link rel="icon" type="image/svg+xml" href="assets/urchin.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400;1,600&family=EB+Garamond:ital,wght@0,400;1,400&family=Instrument+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="journal">
+
+<!-- ── Nav (lockup always shown) ── -->
+<nav class="nav nav-scrolled" id="nav">
+  <a href="index.html" class="nav-brand">
+    <img src="assets/urchin.svg" alt="FGA" class="nav-urchin">
+    <span class="nav-lockup">
+      <span class="nav-rule"></span>
+      <span class="nav-wordmark">FGA</span>
+    </span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html#work-entry" class="nav-link">Work</a>
+    <a href="index.html#about" class="nav-link">About</a>
+    <a href="journal.html" class="nav-link" style="opacity:1; border-bottom:.5px solid var(--sky); padding-bottom:2px;">Journal</a>
+    <a href="index.html#contact" class="nav-link">Contact</a>
+  </div>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#work-entry">Work</a>
+  <a href="index.html#about">About</a>
+  <a href="journal.html">Journal</a>
+  <a href="index.html#contact">Contact</a>
+</div>
+
+<header class="journal-header">
+  <div>
+    <div class="label">Field Notes</div>
+    <h1>Journal</h1>
+  </div>
+  <div class="meta">New York · East Coast · ongoing</div>
+</header>
+
+<main class="entries" id="entries">
+  <div class="journal-status">Loading entries&hellip;</div>
+</main>
+
+<footer class="site-footer">
+  <span class="wm">FGA</span>
+  <span class="coord">40°42′N · 74°00′W</span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script src="js/site.js"></script>
+<script src="js/journal.js"></script>
+</body>
+</html>
