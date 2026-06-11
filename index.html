@@ -53,24 +53,6 @@
   <div class="hero-end" id="hero-end"></div>
 </section>
 
-<!-- ── Services ── -->
-<section class="section-navy" data-theme="dark">
-  <div class="services-grid">
-    <div class="service-col">
-      <div class="service-title">Inspection</div>
-      <div class="service-body" style="font-size:15px;">Underwater structural surveys. ADCI-certified.</div>
-    </div>
-    <div class="service-col">
-      <div class="service-title">Construction</div>
-      <div class="service-body" style="font-size:15px;">In-water repair and waterfront construction. WBE-certified.</div>
-    </div>
-    <div class="service-col">
-      <div class="service-title">Consulting</div>
-      <div class="service-body" style="font-size:15px;">Pre-construction assessment and technical documentation.</div>
-    </div>
-  </div>
-</section>
-
 <!-- ── About ── -->
 <section id="about" class="section-navy" data-theme="dark">
   <div class="section-header">
@@ -79,26 +61,44 @@
   </div>
   <div class="about-grid">
     <div>
+      <div class="about-name">Franceska Arthur</div>
       <p class="body-lead" style="margin-bottom:20px;">
         ADCI-certified commercial diver. USCG captain's licence. OSHA 30.
         WBE-certified through the NYC SBS and NYSBC. Based in New York,
         working the East Coast.
       </p>
-      <p class="body-text">
+      <p class="body-text" style="margin-bottom:28px;">
         Before commercial inspection, she spent years teaching open-water
         and technical diving internationally. That background shows up in
         the work — methodical underwater, direct in what she reports.
       </p>
-      <div style="margin-top:28px;">
-        <div class="wbe-badge">
-          <span class="wbe-dot"></span>
-          <span class="wbe-text">WBE Certified — NYSBC</span>
+      <!-- Credentials table -->
+      <div class="creds-table">
+        <div class="cred-row">
+          <span class="cred-name">WBE Certified</span>
+          <span class="cred-auth">NYS · NYC SBS</span>
+        </div>
+        <div class="cred-row">
+          <span class="cred-name">ADCI Commercial Diver</span>
+          <span class="cred-auth">Assoc. of Diving Contractors Intl.</span>
+        </div>
+        <div class="cred-row">
+          <span class="cred-name">USCG Boat License</span>
+          <span class="cred-auth">U.S. Coast Guard</span>
+        </div>
+        <div class="cred-row">
+          <span class="cred-name">OSHA 30</span>
+          <span class="cred-auth">Occupational Safety &amp; Health</span>
+        </div>
+        <div class="cred-row">
+          <span class="cred-name">Scuba Instructor</span>
+          <span class="cred-auth">PADI</span>
         </div>
       </div>
     </div>
     <!-- To show a real profile photo: add style="background-image:url('assets/your-photo.jpg')"
          to .about-photo-frame below and remove the placeholder <span>. -->
-    <div class="about-photo is-placeholder">
+    <div class="about-photo">
       <div class="about-photo-frame">
         <span class="mono" style="opacity:.25;">Profile photo</span>
       </div>
@@ -108,103 +108,49 @@
       <span class="about-corner br"></span>
     </div>
   </div>
+  <div style="height:72px;"></div>
+</section>
 
-  <div class="creds-table">
-    <div class="cred-row">
-      <span class="cred-name">WBE Certified</span>
-      <span class="cred-auth mono">NYS · NYC SBS</span>
-      <span class="cred-check">✓</span>
-    </div>
-    <div class="cred-row">
-      <span class="cred-name">ADCI Commercial Diver</span>
-      <span class="cred-auth mono">Assoc. of Diving Contractors Intl.</span>
-      <span class="cred-check">✓</span>
-    </div>
-    <div class="cred-row">
-      <span class="cred-name">USCG Boat License</span>
-      <span class="cred-auth mono">U.S. Coast Guard</span>
-      <span class="cred-check">✓</span>
-    </div>
-    <div class="cred-row">
-      <span class="cred-name">OSHA 30</span>
-      <span class="cred-auth mono">Occupational Safety &amp; Health</span>
-      <span class="cred-check">✓</span>
-    </div>
-    <div class="cred-row">
-      <span class="cred-name">Scuba Instructor</span>
-      <span class="cred-auth mono">PADI</span>
-      <span class="cred-check">✓</span>
+<!-- ── Work (linen) — bridge at top, 3 rows label + sentence ── -->
+<section id="work-entry" class="light-section" data-theme="light">
+  <div class="bridge-wrap">
+    <div class="bridge-inner">
+      <svg class="bridge-svg" viewBox="0 0 431 141" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.5 103.635L214 133.635" stroke="#1B4F8A" stroke-opacity=".45" stroke-width=".5"/>
+        <path d="M0.5 103.635L213.5 8.135" stroke="#1B4F8A" stroke-opacity=".45" stroke-width=".5"/>
+        <path d="M246 2.635L430 92.135L371 41.135" stroke="#1B4F8A" stroke-opacity=".45" stroke-width=".5"/>
+        <path d="M430 92.135L250.5 137.635" stroke="#1B4F8A" stroke-opacity=".45" stroke-width=".5"/>
+        <path d="M430 92.635L371.5 115.135" stroke="#1B4F8A" stroke-opacity=".45" stroke-width=".5"/>
+        <path d="M214 133.592V7.686L242.444 0.635L246 139.635L214 133.592Z" stroke="#0E1B35" stroke-opacity=".85"/>
+        <path d="M245.796 139.178C245.544 139.291 245.431 139.587 245.543 139.839C245.656 140.091 245.951 140.204 246.204 140.092L246 139.635L245.796 139.178ZM250.5 137.628L250.704 138.084L251.012 137.947L251 137.61L250.5 137.628ZM245.7 2.642L246.2 2.624L246.19 2.36L245.966 2.219L245.7 2.642ZM246 139.635L246.204 140.092L250.704 138.084L250.5 137.628L250.296 137.171L245.796 139.178L246 139.635ZM250.5 137.628L251 137.61L246.2 2.624L245.7 2.642L245.2 2.66L250 137.646L250.5 137.628ZM245.7 2.642L245.966 2.219L242.766 0.211L242.5 0.635L242.234 1.059L245.434 3.066L245.7 2.642Z" fill="#0E1B35" fill-opacity=".85"/>
+        <path d="M352.25 113.102L352.5 39.635H368.25V115.635L352.25 113.102Z" stroke="#0E1B35" stroke-opacity=".8"/>
+        <path d="M368.5 115.635L371.5 114.635L370.643 41.155L368.5 39.635" stroke="#0E1B35" stroke-opacity=".8"/>
+        <path d="M245.5 2.635C309.042 103.782 337.374 117.535 368 39.635" stroke="#0E1B35" stroke-opacity=".82" stroke-width=".75"/>
+        <path d="M247.5 49.705C287.81 97.722 309.779 106.186 352.5 39.635" stroke="#0E1B35" stroke-opacity=".72" stroke-width=".75"/>
+        <path d="M125.5 100.635C195.952 84.972 204.188 74.17 242.5 0.635" stroke="#0E1B35" stroke-opacity=".72" stroke-width=".75"/>
+        <path d="M90.5 101.635C149.089 91.252 176.518 68.707 214 7.635" stroke="#0E1B35" stroke-opacity=".62" stroke-width=".75"/>
+        <path d="M1 103.635L430 92.135" stroke="#0E1B35" stroke-opacity=".88" stroke-width="2" stroke-linecap="round"/>
+        <path d="M371 71.135C376.96 82.031 382.499 86.83 391.5 93.135" stroke="#0E1B35" stroke-opacity=".6" stroke-width=".75"/>
+        <path d="M371 52.135C379.662 76.871 388.861 79.951 412 92.635" stroke="#0E1B35" stroke-opacity=".55" stroke-width=".75"/>
+      </svg>
     </div>
   </div>
-</section>
-
-<!-- ── Bridge break (linen) — visual header for Work ── -->
-<section id="work-entry" class="light-section bridge-section" data-theme="light">
-  <svg class="bridge-svg" viewBox="0 0 431 141" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0.5 103.635L214 133.635" stroke="#1B4F8A" stroke-opacity=".45" stroke-width=".5"/>
-    <path d="M0.5 103.635L213.5 8.135" stroke="#1B4F8A" stroke-opacity=".45" stroke-width=".5"/>
-    <path d="M246 2.635L430 92.135L371 41.135" stroke="#1B4F8A" stroke-opacity=".45" stroke-width=".5"/>
-    <path d="M430 92.135L250.5 137.635" stroke="#1B4F8A" stroke-opacity=".45" stroke-width=".5"/>
-    <path d="M430 92.635L371.5 115.135" stroke="#1B4F8A" stroke-opacity=".45" stroke-width=".5"/>
-    <path d="M214 133.592V7.686L242.444 0.635L246 139.635L214 133.592Z" stroke="#0E1B35" stroke-opacity=".85"/>
-    <path d="M245.796 139.178C245.544 139.291 245.431 139.587 245.543 139.839C245.656 140.091 245.951 140.204 246.204 140.092L246 139.635L245.796 139.178ZM250.5 137.628L250.704 138.084L251.012 137.947L251 137.61L250.5 137.628ZM245.7 2.642L246.2 2.624L246.19 2.36L245.966 2.219L245.7 2.642ZM246 139.635L246.204 140.092L250.704 138.084L250.5 137.628L250.296 137.171L245.796 139.178L246 139.635ZM250.5 137.628L251 137.61L246.2 2.624L245.7 2.642L245.2 2.66L250 137.646L250.5 137.628ZM245.7 2.642L245.966 2.219L242.766 0.211L242.5 0.635L242.234 1.059L245.434 3.066L245.7 2.642Z" fill="#0E1B35" fill-opacity=".85"/>
-    <path d="M352.25 113.102L352.5 39.635H368.25V115.635L352.25 113.102Z" stroke="#0E1B35" stroke-opacity=".8"/>
-    <path d="M368.5 115.635L371.5 114.635L370.643 41.155L368.5 39.635" stroke="#0E1B35" stroke-opacity=".8"/>
-    <path d="M245.5 2.635C309.042 103.782 337.374 117.535 368 39.635" stroke="#0E1B35" stroke-opacity=".82" stroke-width=".75"/>
-    <path d="M247.5 49.705C287.81 97.722 309.779 106.186 352.5 39.635" stroke="#0E1B35" stroke-opacity=".72" stroke-width=".75"/>
-    <path d="M125.5 100.635C195.952 84.972 204.188 74.17 242.5 0.635" stroke="#0E1B35" stroke-opacity=".72" stroke-width=".75"/>
-    <path d="M90.5 101.635C149.089 91.252 176.518 68.707 214 7.635" stroke="#0E1B35" stroke-opacity=".62" stroke-width=".75"/>
-    <path d="M1 103.635L430 92.135" stroke="#0E1B35" stroke-opacity=".88" stroke-width="2" stroke-linecap="round"/>
-    <path d="M371 71.135C376.96 82.031 382.499 86.83 391.5 93.135" stroke="#0E1B35" stroke-opacity=".6" stroke-width=".75"/>
-    <path d="M371 52.135C379.662 76.871 388.861 79.951 412 92.635" stroke="#0E1B35" stroke-opacity=".55" stroke-width=".75"/>
-  </svg>
-</section>
-
-<!-- ── Work (linen) ── -->
-<section id="work" class="light-section" data-theme="light">
-  <div class="section-header" style="padding-top:16px;">
+  <div class="section-header" style="padding-top:24px; padding-bottom:28px;">
     <div class="section-title">Work</div>
     <span class="mono section-meta">New York · East Coast</span>
   </div>
-
-  <div class="work-discipline">
-    <div>
-      <div class="work-title">Inspection</div>
-      <div class="body-text work-note">ADCI-certified. All work documented to engineering and regulatory standards.</div>
+  <div class="work-rows">
+    <div class="work-discipline">
+      <div class="work-label">Inspection</div>
+      <div class="body-text work-body">Underwater structural assessment of piers, wharves, bulkheads, and bridge substructure. Visual documentation and condition reporting to NYSDOT, NYCEDC, and USACE standards. ADCI-certified.</div>
     </div>
-    <div class="work-scope">
-      <div class="work-item"><span class="work-dash">—</span><span class="body-text work-text">Structural assessment of piers, wharves, bulkheads, and bridge substructure</span></div>
-      <div class="work-item"><span class="work-dash">—</span><span class="body-text work-text">Visual and photographic condition documentation</span></div>
-      <div class="work-item"><span class="work-dash">—</span><span class="body-text work-text">Reporting to NYSDOT, NYCEDC, and USACE standards</span></div>
-      <div class="work-item"><span class="work-dash">—</span><span class="body-text work-text">Marine growth, concrete spall, and pile deterioration assessment</span></div>
-      <div class="work-item"><span class="work-dash">—</span><span class="body-text work-text">ADCI-compliant dive logs and safety documentation</span></div>
+    <div class="work-discipline">
+      <div class="work-label">Construction</div>
+      <div class="body-text work-body">In-water repair and waterfront work — pile replacement, concrete grouting, dock hardware and fender installation. WBE-certified and eligible as a subcontractor on NYC and NYS public contracts.</div>
     </div>
-  </div>
-
-  <div class="work-discipline" style="border-top:.5px solid rgba(14,27,53,0.1);">
-    <div>
-      <div class="work-title">Construction</div>
-      <div class="body-text work-note">WBE-certified — eligible as a subcontractor on NYC and NYS public contracts.</div>
-    </div>
-    <div class="work-scope">
-      <div class="work-item"><span class="work-dash">—</span><span class="body-text work-text">In-water concrete repair and grouting</span></div>
-      <div class="work-item"><span class="work-dash">—</span><span class="body-text work-text">Pile driving, replacement, and repair</span></div>
-      <div class="work-item"><span class="work-dash">—</span><span class="body-text work-text">Dock hardware and fender system installation</span></div>
-      <div class="work-item"><span class="work-dash">—</span><span class="body-text work-text">Waterfront structural work above and below the waterline</span></div>
-      <div class="work-item"><span class="work-dash">—</span><span class="body-text work-text">WBE-subcontract eligible on public contracts</span></div>
-    </div>
-  </div>
-
-  <div class="work-discipline" style="border-top:.5px solid rgba(14,27,53,0.1);">
-    <div>
-      <div class="work-title">Consulting</div>
-      <div class="body-text work-note">Available as a technical resource to engineers, architects, and prime contractors.</div>
-    </div>
-    <div class="work-scope">
-      <div class="work-item"><span class="work-dash">—</span><span class="body-text work-text">Pre-construction underwater site assessment</span></div>
-      <div class="work-item"><span class="work-dash">—</span><span class="body-text work-text">NYC and NY State code compliance review</span></div>
-      <div class="work-item"><span class="work-dash">—</span><span class="body-text work-text">Technical documentation and field reporting</span></div>
-      <div class="work-item"><span class="work-dash">—</span><span class="body-text work-text">In-water scope planning and scheduling input</span></div>
+    <div class="work-discipline">
+      <div class="work-label">Consulting</div>
+      <div class="body-text work-body">Pre-project underwater site assessment, technical documentation, and scope planning. Available to engineers, architects, and prime contractors working on marine or waterfront scope.</div>
     </div>
   </div>
 </section>
@@ -221,7 +167,7 @@
       </div>
       <div style="display:flex; align-items:center; gap:8px; margin-top:8px;">
         <span class="wbe-dot"></span>
-        <span class="wbe-text" style="opacity:.75; color:var(--sky);">WBE Certified — New York · East Coast</span>
+        <span class="mono" style="opacity:.75; color:var(--sky);">WBE Certified — New York · East Coast</span>
       </div>
     </div>
 
