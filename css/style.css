@@ -72,10 +72,12 @@ img { max-width:100%; }
 .nav-brand { display:flex; align-items:center; }
 .nav-urchin {
   display:block; flex-shrink:0; width:32px; height:32px;
-  filter: brightness(0) invert(1); opacity:.85;
-  transition:filter .4s ease;
+  filter: brightness(0) invert(1) sepia(0.2); opacity:.85;
+  -webkit-mask-image: radial-gradient(ellipse 55% 55% at 50% 50%, transparent 30%, black 75%);
+  mask-image: radial-gradient(ellipse 55% 55% at 50% 50%, transparent 30%, black 75%);
+  transition:filter .4s ease, opacity .4s ease;
 }
-.nav.nav-light .nav-urchin { filter: brightness(0) opacity(0.68); }
+.nav.nav-light .nav-urchin { filter: brightness(0); opacity:.55; }
 .nav-lockup {
   display:flex; align-items:center; overflow:hidden;
   max-width:0; opacity:0;
